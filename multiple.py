@@ -10,10 +10,9 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 
 #loading the file
-diabetes_model=pickle.load(open('C:/Users/dell/OneDrive/Desktop/multiple disease predictor/trained_model.sav','rb'))
-heart_disease_model=pickle.load(open('C:/Users/dell/OneDrive/Desktop/multiple disease predictor/heart_disease_model.sav','rb'))
-cancer_model=pickle.load(open('C:/Users/dell/OneDrive/Desktop/multiple disease predictor/breast_cancer_model.sav','rb'))
-
+diabetes_model = pickle.load(open('trained_model.sav', 'rb'))
+heart_disease_model = pickle.load(open('heart_disease_model.sav', 'rb'))
+cancer_model = pickle.load(open('breast_cancer_model.sav', 'rb'))
 #sidebar for app
 with st.sidebar:
     selected=option_menu('Multiple Disease predictor by Gaurika Thakur',
